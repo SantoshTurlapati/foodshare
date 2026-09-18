@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodShare</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #111827;
+            --accent: #10b981;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #0f172a, #111827 50%, #0b1120);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: min(760px, 90vw);
+            background: rgba(17, 24, 39, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 18px;
+            padding: 40px 32px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        p {
+            color: var(--muted);
+            line-height: 1.7;
+            margin: 0 0 22px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .primary {
+            background: var(--accent);
+            color: #03130d;
+        }
+
+        .secondary {
+            background: transparent;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            color: var(--text);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <h1>FoodShare</h1>
+        <p>
+            This project is a full-stack application with a React frontend, Express backend,
+            and SQLite database. GitHub Pages only hosts static files, so the full app must
+            run locally or be deployed to a platform that supports backend services.
+        </p>
+        <div class="actions">
+            <a class="primary" href="https://github.com/SantoshTurlapati/foodshare" target="_blank"
+                rel="noreferrer">View GitHub Repository</a>
+            <a class="secondary" href="https://github.com/SantoshTurlapati/foodshare#readme" target="_blank"
+                rel="noreferrer">Read Project Info</a>
+        </div>
+    </main>
+</body>
+
+</html>
